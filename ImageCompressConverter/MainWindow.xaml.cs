@@ -92,7 +92,7 @@ namespace ImageCompressConverter
 
         private String makeArgument(String convertFileName)
         {
-            return "-filter Lanczos -quality 90 " + convertFileName + " " + destPath.Text + "\\" + System.IO.Path.GetFileName(convertFileName);
+            return "-filter Lanczos -quality 90 \"" + convertFileName + "\" \"" + destPath.Text + "\\" + System.IO.Path.GetFileName(convertFileName) + "\"";
         }
     }
 }
